@@ -6,6 +6,7 @@ Feature: user
     When method post
     Then status 200
 
+    #Post es para crear objetos#
 
   Scenario: Login user
     Given url 'http://localhost:8080/user/login'
@@ -13,3 +14,5 @@ Feature: user
     And param password = 'admin'
     When method get
     Then status 200
+
+    #Get es para obtener información#
